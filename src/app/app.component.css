@@ -1,0 +1,15 @@
+.profile-image {
+  width: 160px;
+  height: 240px;
+}
+
+.profile-card {
+  width: 120%;
+  background-color: transparent;
+  border-width: 0px;
+}
+
+.img-container body{
+  text-align: center;
+}
+

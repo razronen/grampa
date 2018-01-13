@@ -1,0 +1,8 @@
+a {
+  color: ghostwhite;
+}
+
+.card-header:hover{
+  background-color: darkgray;
+  cursor: pointer;
+}

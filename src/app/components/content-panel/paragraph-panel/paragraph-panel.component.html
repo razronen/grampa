@@ -1,0 +1,22 @@
+<div class="card bg-secondary text-white">
+  <div class="card-header" role="tab" id="heading0" (click)="fireContent.click()">
+    <h5 class="mb-0" [class]="language">
+      <a #fireContent href="{{'#' + id}}" data-parent="#accordion" data-toggle="collapse">
+        <span>{{paragraph_header}}</span>
+      </a>
+    </h5>
+  </div>
+
+  <div id="{{id}}" class="collapse">
+    <div class="container">
+        <div class="card-body py-3">
+          <div [class]="language">{{paragraph_content}}</div>
+          <br>
+          <iframe *ngIf="video_url!=''" class="ml-5" width="560" height="315"
+                  [src]="sanitizer.bypassSecurityTrustResourceUrl(video_url)" frameborder="0" allowfullscreen></iframe>
+          <br><br>
+          <div [class]="language">{{paragraph_content_2}}</div>
+        </div>
+      </div>
+  </div>
+</div>

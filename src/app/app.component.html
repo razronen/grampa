@@ -1,0 +1,27 @@
+<app-navbar (languageChange)="languageChanged($event)"></app-navbar>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-8 mx-sm-auto">
+      <app-slider class="mt-5"></app-slider>
+    </div>
+  </div>
+</div>
+<div class="container mb-5">
+  <div class="row">
+    <div class="col-sm-9 mx-auto">
+      <app-content-panel [lang]="language"></app-content-panel>
+    </div>
+    <div class="col-sm-3 mx-auto">
+      <div class="card profile-card m-3">
+        <div class="card-body mx-auto bg-dark">
+          <div class="card-title">{{profile_pic_title}}</div>
+          <div class="img-container">
+            <img class="profile-image m-3" src="../assets/profile_pic.jpg" align="middle">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<app-footer></app-footer>
+
